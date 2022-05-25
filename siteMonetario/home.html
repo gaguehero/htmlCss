@@ -1,0 +1,59 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="style.css">  
+    <title>TrocaGrana</title>
+
+</head>
+<body>
+    <script src="script.js"></script>
+    <div>
+        
+        <table class="navegante">
+            <tr>
+                <td>
+                    <a href="home.html"><img src="imgs/logo.png" alt="logo" height="50px"></a>
+                </td>
+                <td align="right">
+                    <a href="about.html">Quem Somos</a>
+                    <span style="color: #ffde59;">sc</span>
+                    <a href="howto.html">Ajuda</a>
+                    <span style="color: #ffde59;">s</span>
+                </td>
+            </tr>
+        </table>   
+    </div>
+    <div style="margin: 5px;">
+        <h3>Selecione a(s) moeda(s) desejada(s):</h3>
+        <input type="checkbox" name="escolhaMoedas" id="dolar" value="USD">
+        <label for="dolar">Dólar Americano</label>
+        <input type="checkbox" name="escolhaMoedas" id="euro" value="EUR">
+        <label for="euro">Euro</label>
+        <input type="checkbox" name="escolhaMoedas" id="libra" value="GBP">
+        <label for="libra">Libra Esterlina</label>
+    </div>
+    <div style="margin: 5px;">
+        <h3>Selecione periodo de tempo:</h3>
+        <input type="date" name="escolhaInicio" id="tInicial" placeholder="dd-mm-yyyy" value="2021-04-23">
+        <label for="tInicial">Data Inicial</label>
+        <br>
+        <br>
+        <input type="date" name="escolhaFim" id="tFinal" placeholder="dd-mm-yyyy" value="2022-05-23">
+        <label for="tfinal">Data Final</label>
+    </div>
+    <br>
+    <div style="margin: 5px;">
+        <button onclick="montarString()">Buscar</button>
+    </div>
+    <br>
+    <div id="areaDeGraficos" style="width: 100%"></div>
+    <div id='areaDeTabelas'></div>
+
+    <div class="rodape">
+        <p style="color: white; position: fixed; right: 1%; bottom: 0%; margin: 0%;">TrocaGrana S.A., todos os direitos reservados 2022.</p>
+    </div>
+</body>
+</html>
